@@ -1,0 +1,231 @@
+<html lang="ar">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SecureZone | منطقة الحماية الشاملة</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    body {
+      background: linear-gradient(to right, #141e30, #243b55);
+      color: white;
+      overflow-x: hidden;
+      animation: fadeIn 1.5s ease-in-out;
+    }
+
+    header {
+      background: rgba(0, 0, 0, 0.4);
+      padding: 1rem 2rem;
+      text-align: center;
+      border-bottom: 2px solid #00ffcc;
+      animation: slideDown 1s ease forwards;
+    }
+
+    header h1 {
+      font-size: 2.5rem;
+      color: #00ffcc;
+      text-shadow: 0 0 15px #00ffcc;
+    }
+
+    section {
+      padding: 2rem;
+      max-width: 1000px;
+      margin: auto;
+      animation: fadeInUp 1s ease-in-out;
+    }
+
+    .tool {
+      background: rgba(255, 255, 255, 0.05);
+      padding: 1.5rem;
+      margin-bottom: 2rem;
+      border-radius: 12px;
+      box-shadow: 0 0 10px #00ffcc44;
+      transition: 0.3s;
+    }
+
+    .tool:hover {
+      transform: scale(1.02);
+      box-shadow: 0 0 25px #00ffcc88;
+    }
+
+    .tool h2 {
+      margin-bottom: 1rem;
+      color: #00ffcc;
+      font-size: 1.8rem;
+    }
+
+    .tool p {
+      line-height: 1.6;
+    }
+
+    input[type="password"] {
+      padding: 0.6rem;
+      width: 100%;
+      margin-top: 1rem;
+      font-size: 1rem;
+      border-radius: 8px;
+      border: none;
+    }
+
+    .result {
+      margin-top: 1rem;
+      font-weight: bold;
+    }
+
+    @keyframes fadeIn {
+      from {opacity: 0} to {opacity: 1}
+    }
+
+    @keyframes slideDown {
+      from {transform: translateY(-100px); opacity: 0} to {transform: translateY(0); opacity: 1}
+    }
+
+    @keyframes fadeInUp {
+      from {transform: translateY(50px); opacity: 0} to {transform: translateY(0); opacity: 1}
+    }
+    .b{
+      display: flex;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      flex-direction: column;
+    }
+
+    footer {
+      text-align: center;
+      padding: 1rem;
+      background: #00000033;
+      border-top: 1px solid #00ffcc55;
+      font-size: 0.9rem;
+      color: #aaa;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>SecureZone - منطقة الحماية الشاملة</h1>
+  </header>
+
+  <section>
+    <div class="tool">
+      <h2>🔐 فحص قوة كلمة المرور</h2>
+      <p>أدخل كلمة مرور لتقييم قوتها باستخدام خوارزمية JavaScript مباشرة في جهازك.</p>
+      <input type="password" id="passwordInput" placeholder="أدخل كلمة المرور هنا..." oninput="checkPasswordStrength()">
+      <div class="result" id="strengthResult"></div>
+    </div>
+
+    <div class="tool" onclick="window.location.href='wi.html'">
+      <h2>🌐 حماية الشبكة</h2>
+      <p>نصائح لتأمين الوايفاي: تغيير كلمة المرور، تعطيل WPS، استخدام WPA2/3، مراقبة الأجهزة المتصلة.</p>
+    </div>
+
+    <div class="tool"onclick="window.location.href='hand.html'">
+      <h2 oncli>🧠 الهندسة الاجتماعية </h2>
+      <p>تعلم كيف تتعرف على محاولات الاحتيال والخداع في رسائل البريد والمكالمات وروابط التصيد.</p>
+    </div>
+
+    <div class="tool"onclick="window.location.href='lien.html'">
+      <h2>🖇️ كشف الروابط المزيفة</h2>
+      <p>تعرف على طريقة تحليل الروابط والتفريق بين الأصلية والمزيفة، خاصة عند استخدام روابط مختصرة.</p>
+    </div>
+
+    <div class="tool"onclick="window.location.href='fic.html'">
+    
+      <h2>📂 فحص الملفات</h2>
+      <p>تعليمات لفحص الملفات يدوياً: تحقق من الامتداد، الحساب التجزئة (hash)، افحص الملف عبر sandbox قبل الفتح.</p>
+    </div>
+
+    <div class="tool"onclick="window.location.href='go.html'">
+      <h2>🧪 فحص إعدادات المتصفح</h2>
+      <p>هل المتصفح يُسرّب IP؟ هل JavaScript مفعّلة؟ كيف تحمي نفسك بإضافات مثل uBlock و HTTPS Everywhere؟</p>
+    </div>
+  </section>
+
+  <footer>
+    &copy; 2025 SecureZone. جميع الحقوق محفوظة.
+  </footer>
+  <!-- ✅ إشعار سياسة الاستخدام -->
+<div id="termsNotice" style="
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.95);
+  color: #fff;
+  text-align: center;
+  padding: 1rem;
+  z-index: 9999;
+  box-shadow: 0 -3px 10px #00ffcc66;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  display: none;
+">
+  <span>
+    باستخدامك لهذا الموقع، فإنك توافق على
+    <a href="nous.html" style="color:#00ffcc; text-decoration: underline;">سياسة الاستخدام</a>.
+  </span>
+  <br><br>
+  <button onclick="acceptTerms()" style="
+    margin: 0 0.5rem;
+    padding: 0.5rem 1.2rem;
+    border: none;
+    background: #00ffcc;
+    color: #000;
+    font-weight: bold;
+    border-radius: 6px;
+    cursor: pointer;
+  ">موافق</button>
+  
+
+  <button onclick="rejectTerms()" style="
+    margin: 0 0.5rem;
+    padding: 0.5rem 1.2rem;
+    border: 2px solid #00ffcc;
+    background: transparent;
+    color: #00ffcc;
+    font-weight: bold;
+    border-radius: 6px;
+    cursor: pointer;
+  ">رفض</button>
+</div>
+
+
+</div>
+
+  <script>
+    function checkPasswordStrength() {
+      const input = document.getElementById("passwordInput").value;
+      const result = document.getElementById("strengthResult");
+      let strength = 0;
+
+      if (input.length >= 8) strength++;
+      if (/[A-Z]/.test(input)) strength++;
+      if (/[a-z]/.test(input)) strength++;
+      if (/[0-9]/.test(input)) strength++;
+      if (/[^A-Za-z0-9]/.test(input)) strength++;
+
+      const levels = ["ضعيفة جدًا 🚫", "ضعيفة ❌", "متوسطة ⚠️", "قوية ✅", "قوية جدًا 🔐"];
+      result.innerHTML = input ? `قوة كلمة المرور: <span style='color:#00ffcc'>${levels[strength - 1]}</span>` : "";
+    }
+  </script>
+  <script>
+  function acceptTerms() {
+    localStorage.setItem("termsAccepted", "true");
+    document.getElementById("termsNotice").style.display = "none";
+  }
+
+  function rejectTerms() {
+    window.location.href = "no.html"; // 👈 عدل هذه الصفحة حسب ما تريد
+  }
+
+  window.onload = function () {
+    if (!localStorage.getItem("termsAccepted")) {
+      document.getElementById("termsNotice").style.display = "block";
+    }
+  };
+</script>
+</body>
+</html>

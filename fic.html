@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SecureZone | منطقة الحماية الشاملة</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    body {
+      background: linear-gradient(to right, #141e30, #243b55);
+      color: white;
+      overflow-x: hidden;
+      animation: fadeIn 1.5s ease-in-out;
+    }
+    header {
+      background: rgba(0, 0, 0, 0.4);
+      padding: 1rem 2rem;
+      text-align: center;
+      border-bottom: 2px solid #00ffcc;
+      animation: slideDown 1s ease forwards;
+    }
+
+    header h1 {
+      font-size: 2.5rem;
+      color: #00ffcc;
+      text-shadow: 0 0 15px #00ffcc;
+    }
+
+    section {
+      padding: 2rem;
+      max-width: 1000px;
+      margin: auto;
+      animation: fadeInUp 1s ease-in-out;
+    }
+
+    .tool {
+      background: rgba(255, 255, 255, 0.05);
+      padding: 1.5rem;
+      margin-bottom: 2rem;
+      border-radius: 12px;
+      box-shadow: 0 0 10px #00ffcc44;
+      transition: 0.3s;
+    }
+
+    .tool:hover {
+      transform: scale(1.02);
+      box-shadow: 0 0 25px #00ffcc88;
+    }
+
+    .tool h2 {
+      margin-bottom: 1rem;
+      color: #00ffcc;
+      font-size: 1.8rem;
+    }
+
+    .tool p {
+      line-height: 1.6;
+    }
+
+    input[type="password"],
+    input[type="text"] {
+      padding: 0.6rem;
+      width: 100%;
+      margin-top: 1rem;
+      font-size: 1rem;
+      border-radius: 8px;
+      border: none;
+    }
+
+    .result {
+      margin-top: 1rem;
+      font-weight: bold;
+    }
+
+    @keyframes fadeIn {
+      from {opacity: 0} to {opacity: 1}
+    }
+
+    @keyframes slideDown {
+      from {transform: translateY(-100px); opacity: 0} to {transform: translateY(0); opacity: 1}
+    }
+
+    @keyframes fadeInUp {
+      from {transform: translateY(50px); opacity: 0} to {transform: translateY(0); opacity: 1}
+    }
+
+    footer {
+      text-align: center;
+      padding: 1rem;
+      background: #00000033;
+      border-top: 1px solid #00ffcc55;
+      font-size: 0.9rem;
+      color: #aaa;
+    }
+    .a{text-align:center;}
+  </style>
+</head>
+<body>
+  <header>
+    <h1>SecureZone - منطقة الحماية الشاملة</h1>
+  </header>
+
+  <section>
+
+
+<div class="tool">
+  <h2>💾 كشف الملفات المفخخة</h2>
+  <p>
+    ليست كل الهجمات تأتي عبر روابط، فالكثير منها يُخفى داخل ملفات تبدو عادية مثل صور أو مستندات. إليك كيف تكتشف الملف الضار قبل فتحه:
+  </p>
+
+  <p>
+    ✅ <strong>اسم الملف مشبوه:</strong> مثل resume.pdf.exe — امتداد مزدوج يخفي أنه برنامج تنفيذي.<br>
+    ✅ <strong>الحجم غير منطقي:</strong> صورة بحجم 200 ميغابايت؟ غالبًا ملف مفخخ.<br>
+    ✅ <strong>الملف يطلب تفعيل ماكرو:</strong> خصوصًا في Word وExcel — لا تقم بذلك أبدًا إلا إذا كنت واثقًا من المصدر.<br>
+    ✅ <strong>وصلك من جهة مجهولة:</strong> حتى لو بدا من صديق، تأكد من أنه فعلاً أرسله.
+  </p>
+
+  <p>
+    🛡️ <strong>كيف تحمي نفسك:</strong><br>
+    - استخدم <a href="https://www.virustotal.com" target="_blank">VirusTotal</a> لفحص الملف قبل فتحه.<br>
+    - افحص الامتداد الحقيقي (في ويندوز: أظهر امتدادات الملفات، في لينكس: استخدم الأمر <code>file</code>).<br>
+    - لا تفعّل وحدات الماكرو داخل الملفات مهما كانت.<br>
+    - إن كان الملف مشكوكًا فيه، افتحه داخل جهاز وهمي (VM) أو بيئة معزولة (Sandbox).
+  </p>
+
+  <p>
+    🧪 <strong>مثال عملي:</strong><br>
+    يصلك ملف باسم invoice.pdf.exe من بريد غريب، بحجم صغير. يبدو كـ PDF لكنه في الحقيقة ملف تنفيذي (exe) قادر على إصابة جهازك بمجرد النقر عليه.
+  </p>
+</div>
+
+
+  <footer>
+    &copy; 2025 SecureZone. جميع الحقوق محفوظة.
+  </footer>
+</body>
+</html>
